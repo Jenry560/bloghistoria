@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerx{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.heroX{
+   width: 100%;
+   height: auto; 
+   position: relative;
+   display: grid;
+   grid-template-rows: 100px 1fr 10px;
+   color: #fff;
+}
+.heroX::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 115%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../imagenes/causas.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.navx{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.nav__title{
+    font-weight: 300;
+}
+.nav__items{
+    list-style: none;
+}
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+    transition: all 450ms ease; 
+}
+
+.nav__links:hover{
+    background-color: #111;
+ 
+    opacity: .9;
+}
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav__img{
+    display: block;
+    width: 30px;
+}
+.nav__close{
+    display: var(--show,none);
+}
+
+
+.hero__containerX{
+    max-width: 1000px;
+    height: min-content;
+    display: grid;
+    --padding-container: 0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #111;
+    opacity: 0.8;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #111 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    
+}
+.hero__titleX{
+    color: rgb(0, 0, 128);
+    margin: auto;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-right: 4px solid;
+    width: 15ch;
+    overflow: hidden;
+    animation: typing 2s steps(7),blick .6s step-end alternate;
+}
+.hero__paragraphX{
+    margin-bottom: 15px
+}
+.pngX{
+    display: block;
+    width: 200px;
+    justify-self: center;
+    margin: 0 auto;
+}
+.contX{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.otro{
+    margin-bottom: 10px;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes blick {
+    50% { border-color: transparent } 
+}
+
+@media (max-width:480px){
+    .hero__titleX{
+     font-size: 1.5rem;
+    }
+}
+@media (max-width:318px){
+    .hero__titleX{
+     font-size: 1rem;
+    }
+    .heroX::before{
+        height: 100%;
+    }
+}
+@media (max-width:800px){
+    .nav__menu{
+        display: block;
+    }
+    .nav__link--menu{
+        position: fixed;
+        background-color: rgb(0, 0, 128);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+    .nav__link--show{
+        --show:block;
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .heroX::before{
+        height: 100%;
+    }
+}
