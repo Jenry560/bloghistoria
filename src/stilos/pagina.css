@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+
+
+/* Agrega este estilo para asegurarte de que la sección esté visible después de hacer clic en el enlace */
+:target {
+    display: block;
+    padding-top: 60px; /* Ajusta este valor según tu diseño */
+    margin-top: -60px; /* Ajusta este valor según tu diseño */
+  }
+  
 :root{
     --padding-container: 100px 0;
     --color-title: #001A49;

@@ -29,6 +29,7 @@ root.render(
         <Route path='/latina' element={<Latina/>}/>
         <Route path='/masiva' element={<Masiva/>}/>
         <Route path='/crisis' element={<Crisis/>}/>
+       
       </Routes>
     </Router>
   </React.StrictMode>

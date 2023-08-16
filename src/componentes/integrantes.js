@@ -8,6 +8,7 @@ const yo = new URL("../imagenes/yo.jpg",import.meta.url);
 const elmer = new URL("../imagenes/elmer.jpg",import.meta.url);
 const wandy = new URL("../imagenes/wandy.jpg",import.meta.url);
 const alain = new URL("../imagenes/alain.jpg",import.meta.url);
+const heikel = new URL("../imagenes/heikel.jpg",import.meta.url);
 
 function Integrantes(){
     return(
@@ -88,6 +89,24 @@ function Integrantes(){
         </Typography>
         <Typography textAlign="center" variant="body2" color="text.secondary" >
           #20231141
+        </Typography>
+      </CardContent>
+      </Card>
+
+      
+    <Card sx={{ maxWidth: 200, height: "350px" , justifySelf: "center" }}  >
+      <CardMedia
+        component="img"
+        alt="FOTO"
+        height="200"
+        image={heikel}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" textAlign="center" >
+        Heikel de la cruz
+        </Typography>
+        <Typography textAlign="center" variant="body2" color="text.secondary" >
+          #20231120
         </Typography>
       </CardContent>
     </Card>
